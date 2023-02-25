@@ -19,28 +19,30 @@ body{
 .card{
     background-color:hsl(217, 19%, 24%) ;
     max-width: 550px;
+    height: 300px;
     min-height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 0.6rem;
+    padding: 1rem;
    
 }
 .text-header{
     color: hsl(150, 100%, 66%);
     text-align: center;
-    padding: 2rem;
+    padding: 1.7rem;
 }
 .text-main{
     font-size: 28px;
     color: white;
-    padding: 1.4rem;
+    padding-bottom: 1.4rem;
     text-align: center;
 }
 .line{
     
-    margin-bottom: 0.5rem;
+    padding-bottom: 1.5rem;
 }
 .box{
     position: relative;
@@ -55,6 +57,8 @@ body{
     border-radius: 50%;;
     cursor: pointer;
     transition: all 1s;
+    position: absolute;
+    bottom: 330px;
     
     
 
