@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+
+}
+body{
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 11;
+}
+
+.card{
+    background-color:hsl(217, 19%, 24%) ;
+    max-width: 550px;
+    height: 300px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    position: relative;
+    z-index: 11;
+   
+}
+.text-header{
+    color: hsl(150, 100%, 66%);
+    text-align: center;
+    padding: 1.7rem;
+}
+.text-main{
+    font-size: 28px;
+    color: white;
+    padding-bottom: 1.4rem;
+    text-align: center;
+}
+.line{
+    
+    padding-bottom: 1.5rem;
+}
+.box{
+    position: relative;
+}
+.dice{
+    background-color: hsl(150, 100%, 66%);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;;
+    cursor: pointer;
+    transition: all 1.5s;
+    position: absolute;
+    bottom: -10%;
+    z-index: 9999;
+    
+}
+
+.dice img{
+    position: absolute;
+    z-index: 9999;
+
+}
+
+    
+.dice:hover{
+    box-shadow: 0px 0px 44px -4px rgba(82, 255, 168, 0.75);
+}
+.dice-icon:hover{
+    transform: scale(1.15) rotate(-90deg);
+}
+.attribution { font-size: 11px; text-align: center; margin-top: 2rem; color: white;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 480px) {
+        .card{
+            width: 400px;
+            
+        }
+}
+
+@media screen and (max-width: 376px) {
+    .card{
+        width: 300px;
+      
+      
+    }
+    .text-header{
+        font-size: 12px;
+    }
+    .text-main{
+            font-size: 16px;
+    }
+    .dice{
+        width: 40px;
+        height: 40px;
+        bottom: -8%;
+    }
+}
+
+    
